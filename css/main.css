@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(228, 161, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d ;
+}
+.container div{
+   
+    display: inline-block;
+    box-shadow: 0 10px 20px 10px;
+    font-size: 100px;
+    font-style: bold;
+    box-sizing: border-box;
+    transform: perspective(250px) rotateX(60deg);
+    animation: anim 2s infinite ease-in-out;
+}
+
+@keyframes anim{
+    0%{
+        transform: translateZ(-100px);
+        transform: rotateX(180deg);
+    }
+    50%{
+        transform: translateZ(100px);
+    }
+    100%{
+        transform: translateZ(-100px);
+    }
+}
+
+.container div:nth-child(1){
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    animation-delay: 0.1s;
+}
+.container div:nth-child(2){
+    left: 100px;
+    right: 100px;
+    top: 100px;
+    bottom: 100px;
+    animation-delay: 0.2s;
+}
+.container div:nth-child(3){
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    animation-delay: 0.3s;
+}
+.container div:nth-child(4){
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    animation-delay: 0.4s;
+}
+.container div:nth-child(5){
+    left: 40px;
+    right: 40px;
+    top: 40px;
+    bottom: 40px;
+    animation-delay: 0.5s;
+}
+.container div:nth-child(6){
+    left:50px;
+    right:50px;
+    top:50px;
+    bottom:50px;
+    animation-delay: 0.6s;
+   
+}
+
+
+
+
+
+
